@@ -27,3 +27,4 @@ func getName(name_id, global_id) {
 }
 
 ```
+The project is not finished yet!
