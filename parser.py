@@ -89,7 +89,7 @@ class Condition(BaseParser):
         if len(conds) > 1:
             return (
                 'and',
-                [self.condParsing(cond)[1].replace(' ', '') for cond in conds]
+                [self.condParsing(cond) for cond in conds]
             )
 
         else:
@@ -97,11 +97,11 @@ class Condition(BaseParser):
             if len(conds) > 1:
                 return (
                     'or',
-                    [self.condParsing(cond)[1].replace(' ', '') for cond in conds]
+                    [self.condParsing(cond) for cond in conds]
                 )
 
             else:
-                return (None, code.replace(' ', ''))
+                return (None, code)
 
 
 class Variable(BaseParser):
