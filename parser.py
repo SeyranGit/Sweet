@@ -124,8 +124,8 @@ class Variable(BaseParser):
         self.ast[var_name] = {
             'value': var_value,
             'type': 'string'
-            if (var_value[0], var_value[-1]) == ('"', '"') or
-               (var_value[0], var_value[-1]) == ("'", "'") else 'int'
+                    if (var_value[0], var_value[-1]) == ('"', '"') or
+                       (var_value[0], var_value[-1]) == ("'", "'") else 'int'
         }
         return self.ast
 
