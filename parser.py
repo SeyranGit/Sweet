@@ -31,7 +31,7 @@ class BaseParser:
 class Use(BaseParser):
     __slots__ = BaseParser.__slots__
 
-    def parsing(self) -> dict:
+    def parsing(self):
         _, module_name = self.code.split()
         return module_name
 
