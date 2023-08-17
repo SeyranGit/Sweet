@@ -7,7 +7,7 @@ nikname = "sw";
 age = 0;
 
 
-fun getName(name_id, global_id) {
+func getName(name_id, global_id) {
     count = 0;
     loop {
         count = 1;
